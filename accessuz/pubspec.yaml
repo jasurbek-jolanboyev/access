@@ -1,0 +1,32 @@
+name: accessuz
+description: Nogironlar uchun kirish imkoniyati xaritasi
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_maps_flutter: ^2.9.0
+  geolocator: ^13.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1   # Faqat iconka uchun
+
+# ICONKA SOZLAMLARI (splash yoʻq!)
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"   # 1024x1024 PNG
+  min_sdk_android: 21
+  adaptive_icon_background: "#5E5CE6"      # Android 8+ uchun fon rangi
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon.png
